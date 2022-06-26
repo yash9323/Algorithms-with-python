@@ -11,3 +11,13 @@ def anagram(st):
         else:
             d[sorted_word] = [word]
     return list(d.values())
+
+# Binary Search Algorithm 
+def linear_search(arr,srch):
+    a = len(arr)
+    for i in range(a):
+        if arr[i] == srch :
+            print(f"{srch} found in the array at index {i+1} ")
+            break
+    if i == a - 1 :
+        print(f"{srch} is not in the array !")
