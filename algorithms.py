@@ -38,3 +38,31 @@ def binary_search(arr,srch):
             end = mid - 1  
     else :
         print(f"Element {srch} Not in Array !")      
+
+# Jump Search Algorithm 
+def jump_search(arr,srch,jump = None):
+    if not jump :
+        jump = int(len(arr) ** 0.5 )
+    to_search = 0 
+    if srch < arr[to_search]:
+        print(f"{srch} not in array !")
+        return
+    while True :
+        if arr[to_search] == srch:
+            print("Element Found at ",to_search + 1)
+            break
+        if srch < arr[to_search] :
+            for i in range(to_search-jump,to_search):
+                if arr[i] == srch:
+                    print("Element Found at ",i + 1)
+                    found = True
+                    break
+            if found:
+                break
+            else:
+                print(f"{srch} not in array !")
+        if srch > arr[to_search] :
+            to_search+=jump
+            if to_search >= len(arr):
+                print(f"{srch} not in array !")
+                break

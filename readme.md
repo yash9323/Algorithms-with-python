@@ -12,4 +12,11 @@
 
 - Binary Search <br />
   binary_search(array,search) => prints if search in array or not ! <br />
+  "Needs sorted array" <br />
   Time Complexity : O(log n) where n is the no of elements in array <br />
+
+- Jump Search <br />
+  jump_search(array,search,jump=None) => prints if search in array or not ! <br />
+  "Needs sorted array" <br />
+  default jump = sqroot(n) <br />
+  Time Complexity : O(√n) where n is the no of elements in array <br />
