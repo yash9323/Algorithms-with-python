@@ -5,5 +5,3 @@
   anagram(string st ) => list(anagrams) <br />
   input => "below elbow car thing cried cat tac act" <br />
   returns => [['below', 'elbow'], ['car'], ['thing'], ['cried'], ['cat', 'tac', 'act']] <br />
-
-- T9: Text on 9 Keys
