@@ -8,4 +8,8 @@
 
 - Linear Search <br />
   linear_search(array,search_element) => Prints if search in array or not ! <br />
+  Time Complexity : O(n) where n is the no of elements in array  <br />
 
+- Binary Search <br />
+  binary_search(array,search) => prints if search in array or not ! <br />
+  Time Complexity : O(log n) where n is the no of elements in array <br />
