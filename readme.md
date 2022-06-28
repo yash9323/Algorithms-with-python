@@ -20,3 +20,8 @@
   "Needs sorted array" <br />
   default jump = sqroot(n) <br />
   Time Complexity : O(√n) where n is the no of elements in array <br />
+
+- Kadane's Algorithm <br />
+  kadane(array) => returns three things best_sum , start_index and end_index of subarray <br />
+  Time Complexity : O(n) where n is the no of elements in the array <br />
+  

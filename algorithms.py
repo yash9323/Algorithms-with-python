@@ -66,3 +66,21 @@ def jump_search(arr,srch,jump = None):
             if to_search >= len(arr):
                 print(f"{srch} not in array !")
                 break
+
+# Maximum Sum Subarray problem (Kadane Algorithm ! )
+def kadane(arr):
+    best_start = best_end = best_sum = 0 
+    current_sum = 0 
+    for current_end,no in enumerate(arr):
+        if current_sum <= 0:
+            current_start = current_end
+            current_sum = no 
+        else:
+            current_sum += no
+        if current_sum > best_sum :
+            best_sum = current_sum
+            best_start = current_start
+            best_end = current_end + 1 
+    
+    return best_sum,best_start,best_end
+
