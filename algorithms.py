@@ -84,3 +84,34 @@ def kadane(arr):
     
     return best_sum,best_start,best_end
 
+# Merges two sorted arrays into 1 sorted array 
+def merge_sorted_array(a,b):
+    i = 0 
+    j = 0 
+    sorte =[]
+
+    while True:
+        if i == len(a):
+            for i in b[j:]:
+                sorte.append(i)
+            break
+        if j == len(b):
+            for i in a[i:]:
+                sorte.append(i)
+            break
+        if a[i] < b[j]:
+            sorte.append(a[i])
+            i+=1
+            continue
+        if b[j] < a[i]:
+            sorte.append(b[j])
+            j+=1
+            continue
+        if a[i] == b[j]:
+            sorte.append(a[i])
+            sorte.append(b[j])
+            i+=1
+            j+=1
+            continue
+    return sorte
+
