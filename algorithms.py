@@ -115,3 +115,23 @@ def merge_sorted_array(a,b):
             continue
     return sorte
 
+# Selection Sort Algorithm 
+def selection_sort(array,descending = False):
+    length_of_array = len(array)
+    if descending :
+        for i in range(0,length_of_array):
+            for j in range(i+1,length_of_array):
+                if array[j] >= array[i]:
+                    temp = array[i]
+                    array[i] = array[j]
+                    array[j] = temp
+
+    else :
+        for i in range(0,length_of_array):
+            for j in range(i+1,length_of_array):
+                if array[j] <= array[i]:
+                    temp = array[i]
+                    array[i] =array[j]
+                    array[j] = temp
+
+    return array

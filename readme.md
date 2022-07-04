@@ -27,5 +27,9 @@
 
 - Merge two Sorted Arrays <br />
   merge_sorted_array(array1,array2) => returns one sorted array <br />
-  Time Complexity : O(n+m) where n, m are the no of elemtns in the array1 and array 2 <br />
+  Time Complexity : O(n+m) where n, m are the no of elements in the array1 and array 2 <br />
   
+- Selection Sort Algorithm <br />
+  Sorts the array into ascending or descending order <br />
+  selection_sort(array,descending = False) => return sorted array <br />
+  Time Complexity : O(n^2) where n is the no of elements in the array <br />
