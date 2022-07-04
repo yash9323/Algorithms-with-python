@@ -135,3 +135,24 @@ def selection_sort(array,descending = False):
                     array[j] = temp
 
     return array
+
+# Insertion Sort Algorithm 
+def insertion_sort(array,descending = False):
+    length_of_array = len(array)
+    if descending :        
+        for i in range(1,length_of_array):
+            key = array[i]
+            j = i - 1
+            while j > -1 and array[j] < key :
+                array[j+1] = array[j]
+                j = j - 1 
+            array[j+1] = key 
+    else:
+        for i in range(1,length_of_array):
+            key = array[i]
+            j = i - 1
+            while j > -1 and array[j] > key :
+                array[j+1] = array[j]
+                j = j - 1 
+            array[j+1] = key 
+    return array 
