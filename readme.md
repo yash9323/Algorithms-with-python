@@ -38,3 +38,8 @@
   Sorts the array into ascending or descending order <br />
   insertion_sort(array,descending = False) => return sorted array <br />
   Time Complexity : O(n^2) where n is the no of elements in the array <br />
+
+- Bubble Sort Algorithm <br />
+  Sorts the array into ascending or descending order <br />
+  bubble_sort(array,descending = False) => return sorted array <br />
+  Time Complexity : O(n^2) where n is the no of elements in the array <br />

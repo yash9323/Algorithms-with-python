@@ -156,3 +156,18 @@ def insertion_sort(array,descending = False):
                 j = j - 1 
             array[j+1] = key 
     return array 
+
+# Bubble Sort Algorithm 
+def bubble_sort(array,descending = False):        
+    length_of_array = len(array)
+    if descending:
+        for i in range(length_of_array):
+            for j in range(length_of_array-i-1):
+                if array[j] < array[j+1]:
+                    array[j],array[j+1] = array[j+1],array[j]
+    else:    
+        for i in range(length_of_array):
+            for j in range(length_of_array-i-1):
+                if array[j] > array[j+1]:
+                    array[j],array[j+1] = array[j+1],array[j]
+    return array
