@@ -43,3 +43,7 @@
   Sorts the array into ascending or descending order <br />
   bubble_sort(array,descending = False) => return sorted array <br />
   Time Complexity : O(n^2) where n is the no of elements in the array <br />
+
+- Dijkstras Algorithm <br />
+  Uses the greedy approach to find the shorted path from source to destination in a graph <br />
+  Time Complexity : O((V + E) log V) where V are the no of nodes in the graph and E are the edges of each Node. <br />
